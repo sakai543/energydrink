@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>人気順</div>
+	<table>
+	<tr>
+	<th>商品番号</th>
+	<th>商品名</th>
+	<th>価格</th>
+	<th>カフェイン</th>
+	</tr>
+	<tr th:each="drink: ${drinks}">
+	<td th:text="${drink.id}"></td>
+	<td th:text="${drink.name}"></td>
+	<td th:text="${drink.price}"></td>
+	<td th:text="${drink.cafein}"></td>
+	</tr>
+	</table>
+
+</body>
+</html>

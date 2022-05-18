@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Which energydrink do you like?</title>
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header><h1>あなたにピッタリのエナジードリンクは？</h1></header>
+
+<main>
+<div class = "first">
+<h2>人気商品5種の中から、価格・カロリーで比較してみました！</h2>
+<ul>
+	<li><img th:src="@{/img/monster.jpg}"></li>
+	<li><img th:src="@{/img/oronamin.jpg}"></li>
+	<li><img th:src="@{/img/realgold.jpg}"></li>
+	<li><img th:src="@{/img/redbull.jpg}"></li>
+	<li><img th:src="@{/img/repobitan.jpg}"></li>
+</ul>
+
+</div>
+
+<div class = "second">
+
+<br>
+	<a href="/drink/drink/findAll" class = "btn btn--orange">人気順</a><br><br><br>
+	
+
+	<a href="/drink/drink/findAllByOrderByPriceAsc" class = "btn btn--orange">値段の安い順</a><br><br><br>
+
+
+	<a href="/drink/drink/findAllByOrderByCafeinDesc" class = "btn btn--orange">カフェインの多い順</a>
+
+</div>
+</main>
+
+</body>
+</html>
