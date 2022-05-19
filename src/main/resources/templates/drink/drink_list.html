@@ -2,14 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8" />
-<title>Insert title here</title>
+<title>Which energydrink do you like?</title>
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-	<div>人気順</div>
+<main class = "white">
+	<div><h2>人気順</h2></div>
 	<table>
 	<tr>
-	<th>商品番号</th>
+	<th>順位</th>
 	<th>商品名</th>
 	<th>価格</th>
 	<th>カフェイン</th>
@@ -21,6 +22,8 @@
 	<td th:text="${drink.cafein}"></td>
 	</tr>
 	</table>
+</main>
+
 
 </body>
 </html>

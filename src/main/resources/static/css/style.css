@@ -20,6 +20,9 @@ main{
     flex-direction: column;
     min-height: 100vh;
 }
+.white{
+	color: white;
+}
 .first{
 	height: 270px;
 	background-color: rgb(255, 255, 255);

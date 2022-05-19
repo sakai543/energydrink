@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <title>Insert title here</title>
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-	<div>値段の安い順</div>
+<main class = "white">
+	<div><h2>値段の安い順</h2></div>
 	<table>
 	<tr>
-	<th>商品番号</th>
+	<th>順位</th>
 	<th>商品名</th>
 	<th>価格</th>
 	<th>カフェイン</th>
@@ -21,6 +22,6 @@
 	<td th:text="${drink.cafein}"></td>
 	</tr>
 	</table>
-
+</main>
 </body>
 </html>
